@@ -8,7 +8,7 @@ import Blogs from "./components/Blog/Blogs";
 import Main from "./components/Main";
 const App = () => {
   return (
-    <div className="bg-neutral-200">
+    <div className="">
       <div className="container">
         <Header />
       </div>

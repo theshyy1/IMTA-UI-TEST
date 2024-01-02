@@ -3,9 +3,8 @@ import React from "react";
 const Header = () => {
   return (
     <div className="container flex justify-between items-center pt-7">
-      <div className="">
-        <img src="https://picsum.photos/80/72" alt="" />
-      </div>
+      <div className=""></div>
+      <img src="./s" />
       <div className="flex border-[1px] border-neutral-500 rounded-lg px-2">
         <div className="flex items-center">
           <span className="mr-2">
