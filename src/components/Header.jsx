@@ -3,12 +3,13 @@ import React from "react";
 const Header = () => {
   return (
     <div className="container flex justify-between items-center pt-7">
-      <div className=""></div>
-      <img src="./s" />
-      <div className="flex border-[1px] border-neutral-500 rounded-lg px-2">
+      <div className="">
+        <img src="https://picsum.photos/79/72" alt="" />
+      </div>
+      <div className="flex border-[1px] border-[#D0D5DD] rounded-lg">
         <div className="flex items-center">
           <span className="mr-2">
-            <i className="fa-solid fa-magnifying-glass"></i>
+            <i className="fa-solid fa-magnifying-glass ml-[14px] text-xl"></i>
           </span>
           <input
             type="text"
@@ -16,16 +17,18 @@ const Header = () => {
             placeholder="Want to learn speaking?"
           />
         </div>
-        <div className="flex items-center bg-green-200 rounded-lg py-2 px-3">
-          <button className="text-green-700">Explore</button>
+        <div className="flex items-center bg-[#F2FFFB] rounded-lg py-1 px-4 my-1 mr-1 hover:opacity-60 ">
+          <button className="text-[#20B486] text-sm font-semibold">
+            Explore
+          </button>
           <span className="ml-2 text-xl">
-            <i className="fa-solid fa-angle-down"></i>
+            <i className="fa-solid fa-angle-down text-[#20B486]"></i>
           </span>
         </div>
       </div>
       <ul className="flex space-x-5 text-base text-black">
         <li>
-          <a href="#" className="hover:underline">
+          <a href="#" className="hover:underline text-[#1A906B]">
             Home
           </a>
         </li>
@@ -51,8 +54,10 @@ const Header = () => {
         </li>
       </ul>
       <div className="">
-        <button>Sign in</button>
-        <button className="border-2 border-b-gray-500 bg-[#20B486] py-2 px-3 rounded-lg text-white ml-3 hover:bg-green-400">
+        <button className="bg-[#F4EBFF] py-2 pr-5 hover:opacity-60">
+          Sign in
+        </button>
+        <button className="border-2 border-[#F4EBFF] bg-[#20B486] py-2 px-3 rounded-lg text-white hover:opacity-60">
           Create free account
         </button>
       </div>

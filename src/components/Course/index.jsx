@@ -2,33 +2,65 @@ import React from "react";
 import CourseItem from "./CourseItem";
 
 const Courses = () => {
+  const courses = [
+    {
+      name: "Figma UI UX Design..",
+      description:
+        "Use Figma to get a job in UI Design, User Interface, User Experience design.",
+      rate: "4.3",
+      review: "16.325",
+      price: "17.85",
+      nameAuthor: "Jane Cooper",
+      descAuthor: "2001 Enrolled",
+    },
+    {
+      name: "Learn With Shoaib",
+      description:
+        "Design Web Sites and Mobile Apps that Your Users Love and Return to Again.",
+      rate: "3.9",
+      review: "832",
+      price: "8.99",
+      nameAuthor: "Jenny Wilson",
+      descAuthor: "2001 Enrolled",
+    },
+    {
+      name: "Building User Interface..",
+      description:
+        "Learn how to apply User Experience (UX) principles to your website designs.",
+      rate: "4.2",
+      review: "125",
+      price: "11.70",
+      nameAuthor: "Esther Howard",
+      descAuthor: "2001 Enrolled",
+    },
+  ];
   return (
-    <div className="my-[60px]">
-      <div className="flex justify-start flex-col items-start">
-        <p className="text-[#20B486]">Explore Programs</p>
-        <h4 className="text-4xl text-black my-3">Course</h4>
-        <p>
+    <div className="mb-[100px]">
+      <div className="flex justify-start flex-col items-start mb-10">
+        <p className="text-[#1A906B] text-base">Explore Programs</p>
+        <h4 className="text-4xl text-black mt-3 mb-5">Course</h4>
+        <p className="text-[#667085] text-xl">
           Let's join our famous class, the knowledge provided will definitely be
           useful for you.
         </p>
       </div>
       <div className="flex justify-between items-center my-[30px]">
-        <CourseItem />
-        <CourseItem />
-        <CourseItem />
+        {courses.map((course) => {
+          return <CourseItem course={course} />;
+        })}
       </div>
-      <ul className="flex justify-center space-x-2 mt-10">
+      <ul className="flex justify-center space-x-2 my-10">
         <li>
-          <span className="inline-block h-3 w-10 rounded-full bg-[#4AC8AE]"></span>
+          <span className="inline-block h-3 w-12 rounded-full bg-[#4AC8AE]"></span>
         </li>
         <li>
-          <span className="inline-block h-3 w-3 rounded-full bg-neutral-500"></span>
+          <span className="inline-block h-3 w-3 rounded-full bg-[#D9D9D9]"></span>
         </li>
         <li>
-          <span className="inline-block h-3 w-3 rounded-full bg-neutral-500"></span>
+          <span className="inline-block h-3 w-3 rounded-full bg-[#D9D9D9]"></span>
         </li>
       </ul>
-      <button className="block mx-auto py-3 px-4 rounded bg-white my-8">
+      <button className="block border-[1px] border-[#D9D9D9] text-sm mx-auto py-3 px-4 rounded bg-white hover:bg-[#4AC8AE] hover:text-white">
         Explore All Programs
       </button>
     </div>

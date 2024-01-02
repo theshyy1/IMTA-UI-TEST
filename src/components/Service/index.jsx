@@ -3,10 +3,12 @@ import ServiceItem from "./ServiceItem";
 
 const Services = () => {
   return (
-    <div className="my-[60px]">
-      <div className="flex justify-center flex-col items-center">
-        <p className="text-[#20B486]">Our services</p>
-        <h4 className="text-4xl text-black">Company</h4>
+    <div className=" mb-[100px]">
+      <div className="flex justify-center flex-col items-center mb-[40px]">
+        <p className="text-[#20B486] text-base font-semibold mb-3">
+          Our services
+        </p>
+        <h4 className="text-4xl font-semibold text-black">Company</h4>
       </div>
       <div className="flex justify-between items-center mt-[30px]">
         <ServiceItem
@@ -27,13 +29,13 @@ const Services = () => {
       </div>
       <ul className="flex justify-center space-x-2 mt-10">
         <li>
-          <span className="inline-block h-3 w-10 rounded-full bg-[#4AC8AE]"></span>
+          <span className="inline-block h-3 w-12 rounded-full bg-[#4AC8AE]"></span>
         </li>
         <li>
-          <span className="inline-block h-3 w-3 rounded-full bg-neutral-500"></span>
+          <span className="inline-block h-3 w-3 rounded-full bg-[#D9D9D9]"></span>
         </li>
         <li>
-          <span className="inline-block h-3 w-3 rounded-full bg-neutral-500"></span>
+          <span className="inline-block h-3 w-3 rounded-full bg-[#D9D9D9]"></span>
         </li>
       </ul>
     </div>
