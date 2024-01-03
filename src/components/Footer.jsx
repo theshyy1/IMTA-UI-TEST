@@ -1,15 +1,12 @@
 import React from "react";
+import logo from "../assets/Image 2.png";
 
 const Footer = () => {
   return (
     <div className="container">
       <div className="grid grid-cols-6 gap-4 py-[64px]">
         <div className="col-span-2">
-          <img
-            src="https://picsum.photos/79/72"
-            className="object-cover mb-8"
-            alt=""
-          />
+          <img src={logo} className="object-cover mb-8" alt="" />
           <p className="mr-10 text-base">
             Top learning experiences that create more talent in the world.
           </p>

@@ -1,6 +1,6 @@
 import React from "react";
 
-const ServiceItem = ({ title, icon, background }) => {
+const ServiceItem = ({ title, img, background }) => {
   return (
     <div
       className={`h-[214px] w-[373px] ${
@@ -10,11 +10,7 @@ const ServiceItem = ({ title, icon, background }) => {
       }  px-10 flex flex-col justify-center py-3 rounded-lg shadow-lg`}
     >
       <div className="flex items-center">
-        <img
-          src="https://picsum.photos/48/48"
-          className="object-cover rounded-lg mr-5"
-          alt=""
-        />
+        <img src={img} className="object-cover rounded-lg mr-5" alt="" />
         <h3 className="text-2xl font-bold">{title}</h3>
       </div>
       <p className="text-base mt-[30px] mb-[22px]">TEXT CHÚ THÍCH</p>

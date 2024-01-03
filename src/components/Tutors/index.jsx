@@ -1,27 +1,35 @@
 import React from "react";
 import TutorItem from "./TutorItem";
+import tutor1 from "../../assets/Avatar (3).png";
+import tutor2 from "../../assets/Avatar (4).png";
+import tutor3 from "../../assets/Avatar (5).png";
+import tutor4 from "../../assets/Avatar (6).png";
 
 const Tutors = () => {
   const tutors = [
     {
       name: "Theresa Webb",
       role: "Application Support Analyst Lead",
+      avatar: tutor1,
       description:
         "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
     },
     {
       name: "Courtney Henry",
       role: "Director, Undergraduate Analytics and Planning",
+      avatar: tutor2,
       description: "Lead engineering teams at Figma, Pitch, and Protocol Labs.",
     },
     {
       name: "Albert Flores",
       role: "Career Educator",
+      avatar: tutor3,
       description: "Former PM for Linear, Lambda School, and On Deck.",
     },
     {
       name: "Marvin McKinney",
       role: "Co-op & Internships Program & Operations Manager",
+      avatar: tutor4,
       description: "Former frontend dev for Linear, Coinbase, and Postscript.",
     },
   ];
@@ -39,7 +47,7 @@ const Tutors = () => {
       </div>
       <div className="flex justify-between items-center my-[30px]">
         {tutors.map((tutor) => {
-          return <TutorItem tutor={tutor} />;
+          return <TutorItem tutor={tutor} key={tutor.name} />;
         })}
       </div>
     </div>

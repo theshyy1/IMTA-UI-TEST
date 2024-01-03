@@ -22,7 +22,7 @@ const App = () => {
         <Courses />
         <Tutors />
       </div>
-      <div className="bg-[#F0FAF7]">
+      <div>
         <Advertisement />
       </div>
       <div className="container">

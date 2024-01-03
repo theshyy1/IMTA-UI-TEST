@@ -1,5 +1,11 @@
 import React from "react";
 import CourseItem from "./CourseItem";
+import courseImg1 from "../../assets/course1.png";
+import courseImg2 from "../../assets/course2.png";
+import courseImg3 from "../../assets/course3.png";
+import author1 from "../../assets/Avatar.png";
+import author2 from "../../assets/Avatar1.png";
+import author3 from "../../assets/Avatar2.png";
 
 const Courses = () => {
   const courses = [
@@ -12,6 +18,8 @@ const Courses = () => {
       price: "17.85",
       nameAuthor: "Jane Cooper",
       descAuthor: "2001 Enrolled",
+      img: courseImg1,
+      imgAuthor: author1,
     },
     {
       name: "Learn With Shoaib",
@@ -22,6 +30,8 @@ const Courses = () => {
       price: "8.99",
       nameAuthor: "Jenny Wilson",
       descAuthor: "2001 Enrolled",
+      img: courseImg2,
+      imgAuthor: author2,
     },
     {
       name: "Building User Interface..",
@@ -32,6 +42,8 @@ const Courses = () => {
       price: "11.70",
       nameAuthor: "Esther Howard",
       descAuthor: "2001 Enrolled",
+      img: courseImg3,
+      imgAuthor: author3,
     },
   ];
   return (
@@ -46,18 +58,19 @@ const Courses = () => {
       </div>
       <div className="flex justify-between items-center my-[30px]">
         {courses.map((course) => {
-          return <CourseItem course={course} />;
+          return <CourseItem course={course} key={course.name} />;
         })}
       </div>
+      {/* Effect */}
       <ul className="flex justify-center space-x-2 my-10">
-        <li>
-          <span className="inline-block h-3 w-12 rounded-full bg-[#4AC8AE]"></span>
+        <li className="group">
+          <span className="inline-block h-3 w-3 rounded-full bg-[#D9D9D9] group-hover:w-12 group-hover:bg-[#4AC8AE] transition-all duration-300"></span>
         </li>
-        <li>
-          <span className="inline-block h-3 w-3 rounded-full bg-[#D9D9D9]"></span>
+        <li className="group">
+          <span className="inline-block h-3 w-3 rounded-full bg-[#D9D9D9] group-hover:w-12 group-hover:bg-[#4AC8AE] transition-all duration-300"></span>
         </li>
-        <li>
-          <span className="inline-block h-3 w-3 rounded-full bg-[#D9D9D9]"></span>
+        <li className="group">
+          <span className="inline-block h-3 w-3 rounded-full bg-[#D9D9D9] group-hover:w-12 group-hover:bg-[#4AC8AE] transition-all duration-300"></span>
         </li>
       </ul>
       <button className="block border-[1px] border-[#D9D9D9] text-sm mx-auto py-3 px-4 rounded bg-white hover:bg-[#4AC8AE] hover:text-white">

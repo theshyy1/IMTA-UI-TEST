@@ -1,11 +1,11 @@
 import React from "react";
 
 const BlogItem = ({ blog }) => {
-  const { date, title, desc, major } = blog;
+  const { date, title, desc, major, image } = blog;
   return (
     <article className="flex items-center gap-5 hover:shadow-md transform transition-transform hover:scale-105 duration-300">
       <div className="">
-        <img src="https://picsum.photos/320/200" alt="" />
+        <img src={image} alt="" />
       </div>
       <div className="flex flex-col items-start justify-between">
         <span className="text-sm font-semibold text-[#20B486]">{date}</span>
@@ -14,10 +14,11 @@ const BlogItem = ({ blog }) => {
         </h3>
         <p className="text-base text-[#667085] w-[300px]">{desc}</p>
         <ul className="flex text-sm space-x-2 rounded-md mt-6">
-          {major.map(({ name, color, background }) => {
+          {major.map(({ name, color, background }, index) => {
             return (
               <li
-                className={`bg-[${background}] text-[${color}] px-2 py-1 rounded-full`}
+                key={index}
+                className={`bg-[#${background}] text-[#${color}] px-2 py-1 rounded-full`}
               >
                 {name}
               </li>

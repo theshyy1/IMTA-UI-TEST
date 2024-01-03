@@ -1,10 +1,13 @@
 import React from "react";
+import logo from "../assets/image 2.png";
 
 const Header = () => {
   return (
     <div className="container flex justify-between items-center pt-7">
       <div className="">
-        <img src="https://picsum.photos/79/72" alt="" />
+        <a href="#">
+          <img src={logo} alt="" />
+        </a>
       </div>
       <div className="flex border-[1px] border-[#D0D5DD] rounded-lg">
         <div className="flex items-center">
@@ -54,10 +57,10 @@ const Header = () => {
         </li>
       </ul>
       <div className="">
-        <button className="bg-[#F4EBFF] py-2 pr-5 hover:opacity-60">
+        <button className="bg-[#F4EBFF] py-1 pr-4 hover:opacity-60">
           Sign in
         </button>
-        <button className="border-2 border-[#F4EBFF] bg-[#20B486] py-2 px-3 rounded-lg text-white hover:opacity-60">
+        <button className="border-[4px] border-[#F4EBFF] bg-[#20B486] py-2 px-3 rounded-lg text-white hover:opacity-60">
           Create free account
         </button>
       </div>

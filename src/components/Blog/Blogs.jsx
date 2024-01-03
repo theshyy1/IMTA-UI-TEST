@@ -1,5 +1,8 @@
 import React from "react";
 import BlogItem from "./BlogItem";
+import blog1 from "../../assets/Image (3).png";
+import blog2 from "../../assets/Image (4).png";
+import blog3 from "../../assets/Image (5).png";
 
 const Blogs = () => {
   const options = [
@@ -15,9 +18,10 @@ const Blogs = () => {
       title: "Three Pillars of User Delight",
       desc: "Delight can be experienced viscerally, behaviourally, and reflectively. A great design is ...",
       major: [
-        { name: "Research", color: "#C11574", background: "#C11574" },
-        { name: "UI UX", color: "#026AA2", background: "#F0F9FF" },
+        { name: "Research", color: "C11574", background: "FDF2FA" },
+        { name: "UI UX", color: "026AA2", background: "F0F9FF" },
       ],
+      image: blog1,
     },
     {
       date: "September 24, 2017",
@@ -27,6 +31,7 @@ const Blogs = () => {
         { name: "Research", color: "#C11574", background: "#C11574" },
         { name: "UI Design", color: "#026AA2", background: "#F0F9FF" },
       ],
+      image: blog2,
     },
   ];
 
@@ -42,15 +47,16 @@ const Blogs = () => {
   };
   return (
     <div className="pt-4">
+      {/* Effect */}
       <ul className="flex justify-center space-x-2 mb-[100px]">
-        <li>
-          <span className="inline-block h-3 w-12 rounded-full bg-[#4AC8AE]"></span>
+        <li className="group">
+          <span className="inline-block h-3 w-3 rounded-full bg-[#D9D9D9] group-hover:w-12 group-hover:bg-[#4AC8AE] transition-all duration-300"></span>
         </li>
-        <li>
-          <span className="inline-block h-3 w-3 rounded-full bg-[#D9D9D9]"></span>
+        <li className="group">
+          <span className="inline-block h-3 w-3 rounded-full bg-[#D9D9D9] group-hover:w-12 group-hover:bg-[#4AC8AE] transition-all duration-300"></span>
         </li>
-        <li>
-          <span className="inline-block h-3 w-3 rounded-full bg-[#D9D9D9]"></span>
+        <li className="group">
+          <span className="inline-block h-3 w-3 rounded-full bg-[#D9D9D9] group-hover:w-12 group-hover:bg-[#4AC8AE] transition-all duration-300"></span>
         </li>
       </ul>
       <div className="mb-[100px]">
@@ -59,14 +65,14 @@ const Blogs = () => {
           {/* Left */}
           <div className="flex flex-col justify-between">
             {blogs.map((blog) => {
-              return <BlogItem blog={blog} />;
+              return <BlogItem blog={blog} key={blog.title} />;
             })}
           </div>
 
           {/* Right */}
           <article>
             <div className="">
-              <img src="https://picsum.photos/592/240" alt="" />
+              <img src={blog3} alt="" />
             </div>
             <div className="mt-8">
               <span className="text-sm text-[#20B486]">{aBlog.date}</span>

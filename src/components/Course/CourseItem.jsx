@@ -1,16 +1,21 @@
 import React from "react";
 
 const CourseItem = ({ course }) => {
-  const { name, price, description, rate, review, nameAuthor, descAuthor } =
-    course;
+  const {
+    name,
+    price,
+    description,
+    rate,
+    review,
+    nameAuthor,
+    descAuthor,
+    img,
+    imgAuthor,
+  } = course;
   return (
-    <div className="w-[384px] py-2 px-4 shadow-md">
+    <div className="w-[384px] py-2 px-4 shadow-md hover:shadow-lg">
       <div className="">
-        <img
-          src="https://picsum.photos/326/240"
-          alt=""
-          className="object-cover rounded p-6"
-        />
+        <img src={img} alt="" className="object-cover rounded p-6" />
       </div>
       <article className="space-y-4 pb-8 pt-1 px-6">
         <span className="text-sm text-[#1A906B]">Desgin</span>
@@ -36,14 +41,14 @@ const CourseItem = ({ course }) => {
           <div className="flex space-x-3 items-center text-sm">
             <div className="">
               <img
-                src="https://picsum.photos/40/40"
+                src={imgAuthor}
                 className="object-cover rounded-full"
                 alt=""
               />
             </div>
             <div className="">
               <h3>{nameAuthor}</h3>
-              <span className="text-[#667085]">2001 Enrolled</span>
+              <span className="text-[#667085]">{descAuthor}</span>
             </div>
           </div>
           <span className="text-[#3FC89E] text-[26px] font-bold">${price}</span>
