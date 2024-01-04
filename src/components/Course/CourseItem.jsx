@@ -20,12 +20,12 @@ const CourseItem = ({ course }) => {
       <article className="space-y-4 pb-8 pt-1 px-6">
         <span className="text-sm text-[#1A906B]">Desgin</span>
         <div className="flex items-center">
-          <h2 className="text-2xl font-semibold mr-7 hover:underline">
+          <h2 className="text-2xl font-semibold mr-2 hover:underline">
             {name}
           </h2>
           <i className="fa-solid fa-up-right-from-square"></i>
         </div>
-        <p NaclassNameName="text-[#667085]">{description}</p>
+        <p className="text-[#667085]">{description}</p>
         <div className="flex space-x-2 text-sm">
           <span className="text-[#3FC89E]">{rate}</span>
           <ul className="text-[#FF9B26]">

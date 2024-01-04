@@ -10,7 +10,7 @@ import Advertisement from "./components/Advertisement";
 
 const App = () => {
   return (
-    <div className="">
+    <div className="font-inter">
       <div className="container">
         <Header />
       </div>
