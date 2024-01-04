@@ -34,7 +34,7 @@ const Tutors = () => {
     },
   ];
   return (
-    <div className="mb-[100px]">
+    <div className="mb-[98px]">
       <div className="flex justify-start flex-col items-center mb-10">
         <p className="text-[#22B286] text-base font-semibold">Tutors</p>
         <h4 className="text-4xl font-semibold text-black mt-3 mb-5">

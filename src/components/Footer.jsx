@@ -40,86 +40,74 @@ const Footer = () => {
           </li>
         </ul>
         <ul className="col-span-1 space-y-3">
-          <h3 className="mb-4 text-[#98A2B3] text-sm">Product</h3>
+          <h3 className="mb-4 text-[#98A2B3] text-sm">Company</h3>
           <li>
             <a className="hover:underline hover:text-red-600" href="#">
-              Overview
+              About us
             </a>
           </li>
           <li>
             <a className="hover:underline hover:text-red-600" href="#">
-              Features
+              Careers
             </a>
+          </li>
+          <li className="relative">
+            <a className="hover:underline hover:text-red-600" href="#">
+              Press
+            </a>
+            <span className="absolute top-0 left-[50px] block w-[42px] text-center leading-[22px] h-[22px] rounded-full bg-white text-black text-[12px] font-medium">
+              New
+            </span>
           </li>
           <li>
             <a className="hover:underline hover:text-red-600" href="#">
-              Solutions
-            </a>
-          </li>
-          <li>
-            <a className="hover:underline hover:text-red-600" href="#">
-              Tutorials
-            </a>
-          </li>
-          <li>
-            <a className="hover:underline hover:text-red-600" href="#">
-              Pricing
-            </a>
-          </li>
-        </ul>
-        <ul className="col-span-1 space-y-3">
-          <h3 className="mb-4 text-[#98A2B3] text-sm">Product</h3>
-          <li>
-            <a className="hover:underline hover:text-red-600" href="#">
-              Overview
-            </a>
-          </li>
-          <li>
-            <a className="hover:underline hover:text-red-600" href="#">
-              Features
-            </a>
-          </li>
-          <li>
-            <a className="hover:underline hover:text-red-600" href="#">
-              Solutions
-            </a>
-          </li>
-          <li>
-            <a className="hover:underline hover:text-red-600" href="#">
-              Tutorials
-            </a>
-          </li>
-          <li>
-            <a className="hover:underline hover:text-red-600" href="#">
-              Pricing
+              News
             </a>
           </li>
         </ul>
         <ul className="col-span-1 space-y-3">
-          <h3 className="mb-4 text-[#98A2B3] text-sm">Product</h3>
+          <h3 className="mb-4 text-[#98A2B3] text-sm">Social</h3>
           <li>
             <a className="hover:underline hover:text-red-600" href="#">
-              Overview
+              Twitter
             </a>
           </li>
           <li>
             <a className="hover:underline hover:text-red-600" href="#">
-              Features
+              LinkedIn
             </a>
           </li>
           <li>
             <a className="hover:underline hover:text-red-600" href="#">
-              Solutions
+              GitHub
             </a>
           </li>
           <li>
             <a className="hover:underline hover:text-red-600" href="#">
-              Tutorials
+              Dribbble
+            </a>
+          </li>
+        </ul>
+        <ul className="col-span-1 space-y-3">
+          <h3 className="mb-4 text-[#98A2B3] text-sm">Legal</h3>
+          <li>
+            <a className="hover:underline hover:text-red-600" href="#">
+              Terms
             </a>
           </li>
           <li>
             <a className="hover:underline hover:text-red-600" href="#">
-              Pricing
+              Privacy
+            </a>
+          </li>
+          <li>
+            <a className="hover:underline hover:text-red-600" href="#">
+              Cookies
+            </a>
+          </li>
+          <li>
+            <a className="hover:underline hover:text-red-600" href="#">
+              Contact
             </a>
           </li>
         </ul>
@@ -129,27 +117,27 @@ const Footer = () => {
         <ul className="flex space-x-4 text-2xl pb-5">
           <li>
             <a href="#" className="hover:opacity-60">
-              <i class="fa-brands fa-twitter"></i>
+              <i className="fa-brands fa-twitter"></i>
             </a>
           </li>
           <li>
             <a href="#" className="hover:opacity-60">
-              <i class="fa-brands fa-linkedin"></i>
+              <i className="fa-brands fa-linkedin"></i>
             </a>
           </li>
           <li>
             <a href="#" className="hover:opacity-60">
-              <i class="fa-brands fa-facebook"></i>
+              <i className="fa-brands fa-facebook"></i>
             </a>
           </li>
           <li>
             <a href="#" className="hover:opacity-60">
-              <i class="fa-brands fa-github"></i>
+              <i className="fa-brands fa-github"></i>
             </a>
           </li>
           <li>
             <a href="#" className="hover:opacity-60">
-              <i class="fa-solid fa-basketball"></i>
+              <i className="fa-solid fa-basketball"></i>
             </a>
           </li>
         </ul>

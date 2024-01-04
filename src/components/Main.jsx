@@ -44,11 +44,11 @@ const Main = () => {
           <div className="absolute top-[-25px] left-[-125px] flex justify-center items-center -z-10">
             <span className="absolute top-10 left-[18%] w-2 h-2 bg-[#3BC49A] rounded-full"></span>
             <p className="w-[414px] h-[414px] border-[#C7ECE1] border-[1px] rounded-full flex justify-center items-center -z-10">
-              <p className="w-[344px] h-[344px] border-[#C7ECE1] border-[1px] rounded-full flex justify-center items-center -z-10">
-                <p className="w-[265px] h-[265px] border-[#C7ECE1] border-[1px] rounded-full flex justify-center items-center -z-10">
-                  <p className="w-[157px] h-[157px] border-[#C7ECE1] border-[1px] rounded-full"></p>
-                </p>
-              </p>
+              <span className="w-[344px] h-[344px] border-[#C7ECE1] border-[1px] rounded-full flex justify-center items-center -z-10">
+                <span className="w-[265px] h-[265px] border-[#C7ECE1] border-[1px] rounded-full flex justify-center items-center -z-10">
+                  <span className="w-[157px] h-[157px] border-[#C7ECE1] border-[1px] rounded-full"></span>
+                </span>
+              </span>
             </p>
           </div>
         </div>
@@ -94,11 +94,11 @@ const Main = () => {
             <div className="absolute top-[66%] right-[-32%] flex justify-center items-center -z-10">
               {/* <span className="absolute top-[78%] left-[5%] w-2 h-2 bg-[#3BC49A] rounded-full"></span> */}
               <p className="w-[414px] h-[414px] border-[#C7ECE1] border-[1px] rounded-full flex justify-center items-center -z-10">
-                <p className="w-[344px] h-[344px] border-[#C7ECE1] border-[1px] rounded-full flex justify-center items-center -z-10">
-                  <p className="w-[265px] h-[265px] border-[#C7ECE1] border-[1px] rounded-full flex justify-center items-center -z-10">
-                    <p className="w-[157px] h-[157px] border-[#C7ECE1] border-[1px] rounded-full"></p>
-                  </p>
-                </p>
+                <span className="w-[344px] h-[344px] border-[#C7ECE1] border-[1px] rounded-full flex justify-center items-center -z-10">
+                  <span className="w-[265px] h-[265px] border-[#C7ECE1] border-[1px] rounded-full flex justify-center items-center -z-10">
+                    <span className="w-[157px] h-[157px] border-[#C7ECE1] border-[1px] rounded-full"></span>
+                  </span>
+                </span>
               </p>
             </div>
           </div>

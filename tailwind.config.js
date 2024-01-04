@@ -5,8 +5,11 @@ export default {
     extend: {
       container: {
         center: true,
+        padding: "40px",
       },
-      colors: {},
+      fontFamily: {
+        inter: ["Inter"],
+      },
     },
   },
   plugins: [],
