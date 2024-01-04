@@ -6,9 +6,9 @@ import img3 from "../../assets/img3.png";
 
 const Services = () => {
   const serviceItems = [
-    { id: 1, title: "AI CHAT BOT", image: img1, background: "bg-[#4AC8AE]" },
-    { id: 2, title: "GEN QUIZZ", image: img2, background: "bg-[#fff]" },
-    { id: 3, title: "AUTOMATION", image: img3, background: "bg-[#fff]" },
+    { id: 1, title: "AI CHAT BOT", image: img1 },
+    { id: 2, title: "GEN QUIZZ", image: img2 },
+    { id: 3, title: "AUTOMATION", image: img3 },
   ];
   const [isActive, setActive] = useState(1);
 
@@ -24,27 +24,16 @@ const Services = () => {
         <h4 className="text-4xl font-semibold text-black">Company</h4>
       </div>
       <div className="flex justify-between items-center mt-[30px]">
-        <ServiceItem
-          title={"AI CHAT BOT"}
-          img={img1}
-          background={"bg-green-300"}
-          indexActive={isActive}
-          index="1"
-        />
-        <ServiceItem
-          title={"GEN QUIZZ"}
-          img={img2}
-          background={"bg-white"}
-          indexActive={isActive}
-          index="2"
-        />
-        <ServiceItem
-          title={"AUTOMATION"}
-          img={img3}
-          background={"bg-white"}
-          indexActive={isActive}
-          index="3"
-        />
+        {serviceItems.map((item, index) => {
+          return (
+            <ServiceItem
+              key={item.id}
+              service={item}
+              indexActive={isActive}
+              index={index + 1}
+            />
+          );
+        })}
       </div>
       {/* Effect */}
       <ul className="flex justify-center space-x-2 mt-10">
@@ -56,7 +45,11 @@ const Services = () => {
               onClick={() => handleClick(index + 1)}
               key={index}
             >
-              <span className="inline-block h-3 w-3 rounded-full bg-[#D9D9D9] group-hover:w-12 group-hover:bg-[#4AC8AE] transition-all duration-300"></span>
+              <span
+                className={`${
+                  isActive === index + 1 ? " w-12 bg-[#4AC8AE]" : "bg-[#D9D9D9]"
+                } inline-block h-3 w-3 rounded-full  group-hover:w-12 group-hover:bg-[#4AC8AE] transition-all duration-300`}
+              ></span>
             </li>
           ))}
       </ul>
