@@ -57,9 +57,14 @@ const Header = () => {
         </li>
       </ul>
       <div className="">
-        <button className="bg-[#F4EBFF] py-1 pr-4 hover:opacity-60">
-          Sign in
+        <button>
+          <li className="list-none">
+            <a href="#" className="mr-3 font-medium">Sign in</a>
+          </li>
         </button>
+
+        {/* <button className="bg-[#F4EBFF] py-1 pr-4 hover:opacity-60">
+        </button> */}
         <button className="border-[4px] border-[#F4EBFF] bg-[#20B486] py-2 px-3 rounded-lg text-white hover:opacity-60">
           Create free account
         </button>

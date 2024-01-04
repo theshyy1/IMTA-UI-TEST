@@ -13,7 +13,8 @@ const Services = () => {
         </p>
         <h4 className="text-4xl font-semibold text-black">Company</h4>
       </div>
-      <div className="flex justify-between items-center mt-[30px]">
+
+      <div className="flex justify-center gap-16 items-center mt-[30px]">
         <ServiceItem
           title={"AI CHAT BOT"}
           img={img1}
