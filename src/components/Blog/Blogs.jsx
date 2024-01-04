@@ -5,6 +5,7 @@ import blog2 from "../../assets/Image (4).png";
 import blog3 from "../../assets/Image (5).png";
 
 const Blogs = () => {
+
   const blogs = [
     {
       date: "November 16, 2014",
@@ -38,7 +39,6 @@ const Blogs = () => {
       { name: "Developments", color: "#C11574", background: "#AA7492" },
     ],
   };
-
   // const a = aBlog.major.map(({ name, background, color }) => {
   //   return (
   //     <li
@@ -51,7 +51,6 @@ const Blogs = () => {
   // });
 
   // console.log(a);
-
   return (
     <div className="pt-5">
       {/* Effect */}
@@ -70,7 +69,7 @@ const Blogs = () => {
         <h2 className="text-2xl font-semibold mb-8">Our recent blogs</h2>
         <div className="grid grid-cols-2 gap-8 py-1">
           {/* Left */}
-          <div className="flex flex-col justify-between gap-8">
+          <div className="flex flex-col justify-between">
             {blogs.map((blog) => {
               return <BlogItem blog={blog} key={blog.title} />;
             })}
@@ -89,7 +88,7 @@ const Blogs = () => {
                 {/* {aBlog.major.map((item) => {
                   return (
                     <li
-                      key={item.name}
+                       key={item.name}
                       className={`bg-[${item.background}] text-[${item.color}] px-2 rounded-lg`}
                     >
                       {item.name}

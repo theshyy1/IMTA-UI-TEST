@@ -12,7 +12,6 @@ const ServiceItem = ({ service, indexActive, index }) => {
     }
     return className;
   };
-
   const handleActiveText = (number) => {
     let className = "text-[18px] hover:underline";
     if (number === Number(index)) {
@@ -22,12 +21,10 @@ const ServiceItem = ({ service, indexActive, index }) => {
     }
     return className;
   };
-
   return (
     <div className={handleActive(indexActive)}>
       <div className="flex items-center">
-        <img src={image} className="object-cover rounded-lg mr-5" alt="" />
-        <h3 className="text-2xl font-bold">{title}</h3>
+        <img src={image} className="object-cover rounded-lg mr-5" alt="" />        <h3 className="text-2xl font-bold">{title}</h3>
       </div>
       <p className="text-base mt-[30px] mb-[22px]">TEXT CHÚ THÍCH</p>
 

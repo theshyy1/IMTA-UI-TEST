@@ -1,6 +1,5 @@
 import React from "react";
 
-// transform transition-transform hover:scale-105 duration-300
 const BlogItem = ({ blog }) => {
   const { date, title, desc, major, image } = blog;
   return (
