@@ -20,23 +20,23 @@ const Main = () => {
 
         {/* animation 1 */}
         <div className="relative w-[223px] h-[223px] container mx-auto">
-          <div className='w-[358.5px] h-[359.5px] rounded-full absolute top-[70px] left-[69px] animate-spin spin-slower'>
+          <div className='w-[358.5px] h-[359.5px] rounded-full absolute top-[70px] left-[110px] animate-spin spin-slower'>
             <div className="w-2 h-2 rounded-full bg-green-600"></div>
           </div>
 
 
 
 
-          <div className='w-[313px] h-[313px] rounded-full absolute top-[92px] left-[90px] animate-spin spin-slower1'>
+          <div className='w-[313px] h-[313px] rounded-full absolute top-[92px] left-[130px] animate-spin spin-slower1'>
             <div className="w-2 h-2 rounded-full bg-green-600"></div>
           </div>
-          <div className='w-[267.5px] h-[267.5px] rounded-full absolute top-[114px] left-[111px] animate-spin spin-slower2'>
+          <div className='w-[267.5px] h-[267.5px] rounded-full absolute top-[114px] left-[151px] animate-spin spin-slower2'>
             <div className="w-2 h-2 rounded-full bg-green-600"></div>
           </div>
 
 
 
-          <div className='w-[203px] h-[203px] rounded-full absolute top-[145px] left-[148px] animate-spin spin-slower3'>
+          <div className='w-[203px] h-[203px] rounded-full absolute top-[145px] left-[188px] animate-spin spin-slower3'>
             <div className="w-2 h-2 rounded-full bg-green-600"></div>
           </div>
 
