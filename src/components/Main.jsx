@@ -18,6 +18,7 @@ const Main = () => {
       <div className="flex justify-center gap-[360px]">
         {/* animation 1 */}
         <div className="relative w-[223px] h-[223px] container mx-auto">
+
           <div className="w-[358.5px] h-[359.5px] rounded-full absolute top-[70px] left-[110px] animate-spin spin-slower">
             <div className="w-2 h-2 rounded-full bg-green-600"></div>
           </div>
@@ -29,7 +30,7 @@ const Main = () => {
             <div className="w-2 h-2 rounded-full bg-green-600"></div>
           </div>
 
-          <div className="w-[203px] h-[203px] rounded-full absolute top-[145px] left-[188px] animate-spin spin-slower3">
+          <div className='w-[203px] h-[203px] rounded-full absolute top-[145px] left-[188px] animate-spin spin-slower3'>
             <div className="w-2 h-2 rounded-full bg-green-600"></div>
           </div>
 
