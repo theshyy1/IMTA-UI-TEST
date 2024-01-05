@@ -16,38 +16,29 @@ const Main = () => {
   return (
     <div className="container mx-auto pt-[80px] pb-[120px]">
       <div className="flex justify-center gap-[360px]">
-
-
         {/* animation 1 */}
         <div className="relative w-[223px] h-[223px] container mx-auto">
-          <div className='w-[358.5px] h-[359.5px] rounded-full absolute top-[70px] left-[110px] animate-spin spin-slower'>
+
+          <div className="w-[358.5px] h-[359.5px] rounded-full absolute top-[70px] left-[110px] animate-spin spin-slower">
             <div className="w-2 h-2 rounded-full bg-green-600"></div>
           </div>
 
-
-
-
-          <div className='w-[313px] h-[313px] rounded-full absolute top-[92px] left-[130px] animate-spin spin-slower1'>
+          <div className="w-[313px] h-[313px] rounded-full absolute top-[92px] left-[130px] animate-spin spin-slower1">
             <div className="w-2 h-2 rounded-full bg-green-600"></div>
           </div>
-          <div className='w-[267.5px] h-[267.5px] rounded-full absolute top-[114px] left-[151px] animate-spin spin-slower2'>
+          <div className="w-[267.5px] h-[267.5px] rounded-full absolute top-[114px] left-[151px] animate-spin spin-slower2">
             <div className="w-2 h-2 rounded-full bg-green-600"></div>
           </div>
-
-
 
           <div className='w-[203px] h-[203px] rounded-full absolute top-[145px] left-[188px] animate-spin spin-slower3'>
             <div className="w-2 h-2 rounded-full bg-green-600"></div>
           </div>
 
-
-
           <div className="w-2/5 relative">
-            <div className='w-[495px] h-[495px] opacity-60 border border-[#20b486] rounded-full flex justify-center items-center'>
-              <div className='w-[430px] h-[430px] border border-[#20b486] rounded-full flex justify-center items-center'>
-                <div className='w-[365px] h-[365px] border border-[#20b486] rounded-full flex justify-center items-center'>
-                  <div className='w-[280px] h-[280px] border border-[#20b486] rounded-full flex justify-center items-center'>
-                  </div>
+            <div className="w-[495px] h-[495px] opacity-60 border border-[#20b486] rounded-full flex justify-center items-center">
+              <div className="w-[430px] h-[430px] border border-[#20b486] rounded-full flex justify-center items-center">
+                <div className="w-[365px] h-[365px] border border-[#20b486] rounded-full flex justify-center items-center">
+                  <div className="w-[280px] h-[280px] border border-[#20b486] rounded-full flex justify-center items-center"></div>
                 </div>
               </div>
             </div>
@@ -63,39 +54,35 @@ const Main = () => {
                 </button>
               </div>
               <div className="mt-6">
-                <ul className='flex gap-10 justify-center items-center'>
-                  <li className='flex gap-2'>
+                <ul className="flex gap-10 justify-center items-center">
+                  <li className="flex gap-2">
                     <img src={logo1} alt="" />
                     <span>Listenning</span>
                   </li>
-                  <li className='flex gap-2'>
+                  <li className="flex gap-2">
                     <img src={logo2} alt="" />
                     <span>Writiing</span>
                   </li>
-                  <li className='flex gap-1'>
+                  <li className="flex gap-1">
                     <img src={logo3} alt="" />
                     <span>Speaking</span>
                   </li>
                 </ul>
               </div>
             </div>
-
           </div>
         </div>
-
-
 
         {/* animation 2 */}
         <div className="mr-48 ">
           <div className="relative w-[495px] h-[495px] bg-[#20B486] rounded-full z-999 ">
-
-            <div className='w-[358.5px] h-[359.5px] rounded-full absolute top-[39px] left-[39px] animate-spin spin-slower z-0'>
+            <div className="w-[358.5px] h-[359.5px] rounded-full absolute top-[39px] left-[39px] animate-spin spin-slower z-0">
               <div className="w-2 h-2 rounded-full bg-[#20B486]"></div>
             </div>
-            <div className='w-[358.5px] h-[359.5px] rounded-full absolute top-[39px] left-[39px] animate-spin spin-slower2 z-0'>
+            <div className="w-[358.5px] h-[359.5px] rounded-full absolute top-[39px] left-[39px] animate-spin spin-slower2 z-0">
               <div className="w-2 h-2 rounded-full bg-[#20B486]"></div>
             </div>
-            <div className='w-[358.5px] h-[359.5px] rounded-full absolute top-[39px] left-[39px] animate-spin spin-slower3 z-0'>
+            <div className="w-[358.5px] h-[359.5px] rounded-full absolute top-[39px] left-[39px] animate-spin spin-slower3 z-0">
               <div className="w-2 h-2 rounded-full bg-[#20B486]"></div>
             </div>
             {/* Big dot */}
@@ -114,7 +101,6 @@ const Main = () => {
               </div>
             </div>
 
-
             <div className="flex space-x-2 border-[1px] bg-[#F5F5F4] border-[#20B486] py-2 px-3 w-[164px] rounded-3xl absolute top-[78%] right-[-0%] slide-fwd-br">
               <span className="flex items-center justify-center bg-[#20B486] w-[49px] h-[49px] rounded-xl m-2">
                 <img src={icon3} className="w-9 h-9 object-cover" alt="" />
@@ -124,7 +110,6 @@ const Main = () => {
                 <h3 className="text-[25px] font-bold">250+</h3>
               </div>
             </div>
-
 
             <div className="flex flex-col items-center border-[1px] text-center bg-[#F5F5F4] border-[#20B486] py-4 px-5 rounded-3xl absolute top-[0] right-[-0%] slide-fwd-tr">
               <img
