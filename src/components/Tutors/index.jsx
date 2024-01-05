@@ -40,12 +40,12 @@ const Tutors = () => {
         <h4 className="text-4xl font-semibold text-black mt-3 mb-5">
           Team member
         </h4>
-        <p className="text-xl text-[#667085] w-[750px] text-center">
+        <p className="text-xl text-[#667085] max-w-[750px] text-center">
           On Weekend UX, instructors from all over the world instruct millions
           of students. We offer the knowledge and abilities.
         </p>
       </div>
-      <div className="flex justify-between items-center my-[30px]">
+      <div className="flex flex-col lg:flex-row md:flex-row justify-between flex-wrap items-center my-[30px]">
         {tutors.map((tutor) => {
           return <TutorItem tutor={tutor} key={tutor.name} />;
         })}

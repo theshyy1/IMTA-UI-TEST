@@ -3,7 +3,7 @@ import React from "react";
 const TutorItem = ({ tutor }) => {
   const { name, description, role, avatar } = tutor;
   return (
-    <div className="w-[276px] h-[340px] bg-[#F9FAFB] p-6 shadow-md transform transition-transform hover:scale-110 duration-300">
+    <div className="w-[276px] h-[340px] mb-3 bg-[#F9FAFB] p-6 shadow-md transform transition-transform hover:scale-110 duration-300">
       <div className="h-full text-center flex flex-col items-center justify-between space-y-3 rounded-lg ">
         <img
           src={avatar}

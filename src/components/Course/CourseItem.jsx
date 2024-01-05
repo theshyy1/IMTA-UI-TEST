@@ -13,12 +13,12 @@ const CourseItem = ({ course }) => {
     imgAuthor,
   } = course;
   return (
-    <div className="w-[384px] py-2 px-4 shadow-md hover:shadow-lg">
+    <div className="max-w-[400px] mb-4 lg:w-[384px] gap-8 lg:block py-2 px-4 shadow-md hover:shadow-lg">
       <div className="">
         <img src={img} alt="" className="object-cover rounded p-6" />
       </div>
       <article className="space-y-4 pb-8 pt-1 px-6">
-        <span className="text-sm text-[#1A906B]">Desgin</span>
+        <span className="hidden lg:block text-sm text-[#1A906B]">Desgin</span>
         <div className="flex items-center">
           <h2 className="text-2xl font-semibold mr-2 hover:underline">
             {name}

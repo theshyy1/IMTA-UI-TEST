@@ -16,7 +16,7 @@ const Services = () => {
     setActive(number);
   };
   return (
-    <div className=" mb-[100px]">
+    <div className="mb-[100px]">
       <div className="flex justify-center flex-col items-center mb-[40px]">
         <p className="text-[#20B486] text-base font-semibold mb-3">
           Our services
@@ -24,7 +24,7 @@ const Services = () => {
         <h4 className="text-4xl font-semibold text-black">Company</h4>
       </div>
 
-      <div className="flex justify-center gap-16 items-center mt-[30px]">
+      <div className="flex flex-col lg:flex-row justify-center gap-16 items-center mt-[30px]">
         {serviceItems.map((item, index) => {
           return (
             <ServiceItem
@@ -35,7 +35,6 @@ const Services = () => {
             />
           );
         })}
-
       </div>
       {/* Effect */}
       <ul className="flex justify-center space-x-2 mt-10">
@@ -48,8 +47,9 @@ const Services = () => {
               key={index}
             >
               <span
-                className={`${isActive === index + 1 ? " w-12 bg-[#4AC8AE]" : "bg-[#D9D9D9]"
-                  } inline-block h-3 w-3 rounded-full  group-hover:w-12 group-hover:bg-[#4AC8AE] transition-all duration-300`}
+                className={`${
+                  isActive === index + 1 ? " w-12 bg-[#4AC8AE]" : "bg-[#D9D9D9]"
+                } inline-block h-3 w-3 rounded-full  group-hover:w-12 group-hover:bg-[#4AC8AE] transition-all duration-300`}
               ></span>
             </li>
           ))}

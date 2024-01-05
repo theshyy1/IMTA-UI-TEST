@@ -4,7 +4,7 @@ import logo from "../assets/Image 2.png";
 const Footer = () => {
   return (
     <div className="container">
-      <div className="grid grid-cols-6 gap-4 py-[64px]">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 py-[64px]">
         <div className="col-span-2">
           <img src={logo} className="object-cover mb-8" alt="" />
           <p className="mr-10 text-base">

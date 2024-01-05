@@ -4,7 +4,7 @@ import logo from "../assets/image 2.png";
 const Header = () => {
   return (
     <div className="container flex justify-between items-center pt-7">
-      <div className="">
+      <div className="hidden md:block lg:block">
         <a href="#">
           <img src={logo} alt="" />
         </a>
@@ -29,7 +29,7 @@ const Header = () => {
           </span>
         </div>
       </div>
-      <ul className="flex space-x-5 text-base text-black">
+      <ul className="hidden lg:flex space-x-5 text-base text-black">
         <li>
           <a href="#" className="hover:underline text-[#1A906B]">
             Home
@@ -56,15 +56,17 @@ const Header = () => {
           </a>
         </li>
       </ul>
-      <div className="">
+      <p className="text-2xl lg:hidden md:block">
+        <i class="fa-solid fa-bars"></i>
+      </p>
+      <div className="hidden lg:block">
         <button>
           <li className="list-none">
-            <a href="#" className="mr-3 font-medium">Sign in</a>
+            <a href="#" className="mr-3 font-medium">
+              Sign in
+            </a>
           </li>
         </button>
-
-        {/* <button className="bg-[#F4EBFF] py-1 pr-4 hover:opacity-60">
-        </button> */}
         <button className="border-[4px] border-[#F4EBFF] bg-[#20B486] py-2 px-3 rounded-lg text-white hover:opacity-60">
           Create free account
         </button>

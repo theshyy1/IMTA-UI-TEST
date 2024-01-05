@@ -5,7 +5,6 @@ import blog2 from "../../assets/Image (4).png";
 import blog3 from "../../assets/Image (5).png";
 
 const Blogs = () => {
-
   const blogs = [
     {
       date: "November 16, 2014",
@@ -67,7 +66,7 @@ const Blogs = () => {
       </ul>
       <div className="mb-[100px]">
         <h2 className="text-2xl font-semibold mb-8">Our recent blogs</h2>
-        <div className="grid grid-cols-2 gap-8 py-1">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 py-1">
           {/* Left */}
           <div className="flex flex-col justify-between">
             {blogs.map((blog) => {
