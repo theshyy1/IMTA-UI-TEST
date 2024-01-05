@@ -17,7 +17,7 @@ const Main = () => {
     <div className="container mx-auto pt-[80px] pb-[120px]">
       <div className="flex justify-center gap-[360px]">
         {/* animation 1 */}
-        <div className="hidden lg:block relative w-[223px] h-[223px] container mx-auto">
+        <div className="relative w-[223px] h-[223px] container mx-auto">
           <div className="w-[358.5px] h-[359.5px] rounded-full absolute top-[70px] left-[110px] animate-spin spin-slower">
             <div className="w-2 h-2 rounded-full bg-green-600"></div>
           </div>
