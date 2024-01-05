@@ -17,7 +17,7 @@ const Main = () => {
     <div className="container mx-auto pt-[80px] pb-[120px]">
       <div className="flex justify-center gap-[360px]">
         {/* animation 1 */}
-        <div className="relative w-[223px] h-[223px] container mx-auto">
+        <div className="hidden lg:block relative w-[223px] h-[223px] container mx-auto">
           <div className="w-[358.5px] h-[359.5px] rounded-full absolute top-[70px] left-[110px] animate-spin spin-slower">
             <div className="w-2 h-2 rounded-full bg-green-600"></div>
           </div>
@@ -74,7 +74,7 @@ const Main = () => {
 
         {/* animation 2 */}
         <div className="mr-48 ">
-          <div className="relative w-[495px] h-[495px] bg-[#20B486] rounded-full z-999 ">
+          <div className="hidden lg:block relative w-[495px] h-[495px] bg-[#20B486] rounded-full z-999 ">
             <div className="w-[358.5px] h-[359.5px] rounded-full absolute top-[39px] left-[39px] animate-spin spin-slower z-0">
               <div className="w-2 h-2 rounded-full bg-[#20B486]"></div>
             </div>
@@ -137,8 +137,47 @@ const Main = () => {
           </div>
         </div>
       </div>
+      <div className="lg:hidden flex justify-center items-center relative container mx-auto">
+        <div className="">
+          <div className="w-[495px] h-[495px] opacity-60 border border-[#20b486] rounded-full flex justify-center items-center">
+            <div className="w-[430px] h-[430px] border border-[#20b486] rounded-full flex justify-center items-center">
+              <div className="w-[365px] h-[365px] border border-[#20b486] rounded-full flex justify-center items-center">
+                <div className="w-[280px] h-[280px] border border-[#20b486] rounded-full flex justify-center items-center"></div>
+              </div>
+            </div>
+          </div>
+          <div className="absolute top-8 left-20 z-10">
+            <h1 className="text-[64px] font-bold mb-6">Text </h1>
+            <p className="mb-6">Description..</p>
+            <div className="flex gap-3 my-8">
+              <button className="bg-[#20B486] text-[18px] border-2 border-[#F4EBFF]  text-white shadow-md rounded-lg py-4 px-6 hover:bg-white whitespace-nowrap hover:text-[#20B486]">
+                Get started
+              </button>
+              <button className="bg-[#EAFFF9] text-[#3BC49A] text-[18px] rounded-lg py-4 px-6 shadow-md hover:bg-[#20B486] whitespace-nowrap hover:text-white">
+                Get free trial
+              </button>
+            </div>
+            <div className="mt-6">
+              <ul className="flex gap-10 justify-center items-center">
+                <li className="flex gap-2">
+                  <img src={logo1} alt="" />
+                  <span>Listenning</span>
+                </li>
+                <li className="flex gap-2">
+                  <img src={logo2} alt="" />
+                  <span>Writiing</span>
+                </li>
+                <li className="flex gap-1">
+                  <img src={logo3} alt="" />
+                  <span>Speaking</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
       {/* List sponsor */}
-      <div className="mt-[80px] ">
+      <div className="mt-[80px] hidden lg:block">
         <ul className="flex pt-14 justify-around items-center ">
           <li>
             <div className="">

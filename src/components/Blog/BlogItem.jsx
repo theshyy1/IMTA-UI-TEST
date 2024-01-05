@@ -3,7 +3,7 @@ import React from "react";
 const BlogItem = ({ blog }) => {
   const { date, title, desc, major, image } = blog;
   return (
-    <article className="flex gap-5 hover:shadow-lg shadow-md">
+    <article className="flex gap-5 mb-3 lg:mb-0 hover:shadow-lg shadow-md">
       <div className="h-[200px] w-[320px]">
         <img src={image} className="object-cover " alt="" />
       </div>

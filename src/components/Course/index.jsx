@@ -56,7 +56,7 @@ const Courses = () => {
           useful for you.
         </p>
       </div>
-      <div className="flex place-content-around items-center my-[30px]">
+      <div className="flex flex-col lg:flex-row justify-between items-center flex-wrap my-[30px]">
         {courses.map((course) => {
           return <CourseItem course={course} key={course.name} />;
         })}
