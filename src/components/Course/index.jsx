@@ -49,8 +49,10 @@ const Courses = () => {
   return (
     <div className="mb-[100px]">
       <div className="flex justify-start flex-col items-start mb-10">
-        <p className="text-[#1A906B] text-base">Explore Programs</p>
-        <h4 className="text-4xl text-black mt-3 mb-5">Course</h4>
+        <p className="text-[#20B486] text-base font-semibold mb-3">
+          Explore Programs
+        </p>
+        <h4 className="text-4xl font-semibold text-black mb-2">Course</h4>
         <p className="text-[#667085] text-xl">
           Let's join our famous class, the knowledge provided will definitely be
           useful for you.

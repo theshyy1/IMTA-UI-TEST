@@ -7,6 +7,7 @@ export default {
       container: {
         center: true,
         padding: "40px",
+        width: "1200px",
       },
       fontFamily: {
         inter: ["Inter"],

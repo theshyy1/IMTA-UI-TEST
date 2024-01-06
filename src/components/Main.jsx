@@ -14,7 +14,7 @@ import magicleap from "../assets/magic.png";
 
 const Main = () => {
   return (
-    <div className="container mx-auto pt-[80px] pb-[120px]">
+    <div className=" mx-auto pt-[80px] pb-[120px]">
       <div className="flex justify-center gap-[360px]">
         {/* animation 1 */}
         <div className="relative w-[223px] h-[223px] container mx-auto">
@@ -177,7 +177,7 @@ const Main = () => {
         </div>
       </div>
       {/* List sponsor */}
-      <div className="mt-[80px] hidden lg:block">
+      <div className="container mt-[80px] hidden lg:block">
         <ul className="flex pt-14 justify-around items-center ">
           <li>
             <div className="">

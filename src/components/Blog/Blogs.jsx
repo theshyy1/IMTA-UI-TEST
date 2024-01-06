@@ -77,7 +77,7 @@ const Blogs = () => {
           {/* Right */}
           <article className="hover:shadow-lg shadow-md">
             <div className="">
-              <img src={blog3} alt="" />
+              <img src={blog3} className="w-full" alt="" />
             </div>
             <div className="mt-8 pl-3">
               <span className="text-sm text-[#20B486]">{aBlog.date}</span>
@@ -94,13 +94,13 @@ const Blogs = () => {
                     </li>
                   );
                 })} */}
-                <li className="bg-[#FFF9F3] text-[#FF9B26] px-2 py-[2px] rounded-lg">
+                <li className="bg-[#FFF9F3] text-[#FF9B26] px-2 py-[2px] rounded-lg cursor-pointer">
                   Programming
                 </li>
-                <li className="bg-[#EEF4FF] text-[#3538CD] px-2 py-[2px] rounded-lg">
+                <li className="bg-[#EEF4FF] text-[#3538CD] px-2 py-[2px] rounded-lg cursor-pointer">
                   Research
                 </li>
-                <li className="bg-[#FDF2FA] text-[#C11574] px-2 py-[2px] rounded-lg">
+                <li className="bg-[#FDF2FA] text-[#C11574] px-2 py-[2px] rounded-lg cursor-pointer">
                   Developments
                 </li>
               </ul>
